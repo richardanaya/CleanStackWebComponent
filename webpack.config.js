@@ -35,5 +35,13 @@ module.exports = {
   ],
   module: {
     loaders: loaders
+  },
+  devServer: {
+    contentBase:"./public/",
+    host: "0.0.0.0",
+    proxy: [{
+      path: '/api/*',
+      target: 'http://localhost:9999'
+    }]
   }
 };

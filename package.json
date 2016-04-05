@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Project boilerplate",
   "scripts": {
-    "start": "webpack-dev-server --content-base public/",
+    "start": "webpack-dev-server",
     "build": "webpack"
   },
   "dependencies": {
